@@ -11,7 +11,7 @@
         "contenido": {
             "Alberto": {
                 "Acerca de mi":"Subdirector de Desarrollo con +18 años de trayectoria profesional en distintos sectores, dirigiendo proyectos web y generando estrategias innovadoras de comercialización. Con amplia experiencia en el desarrollo de aplicaciones web y móviles, gestión de bases de datos, establecimiento de canales de comunicación y coordinación de áreas técnicas. Adapto una filosofía basada en aumentar la productividad, acelerar la innovación y priorizar las necesidades de los clientes. Habituado a trabajar bajo presión, con gran orientación al detalle y facilidad para la comunicación; cuento con una mezcla de conocimientos teóricos y prácticos que me permiten estar alineado a una visión global de la tecnología. Busco seguir desarrollando arquitecturas orientadas a servicios en web, implementando servicios para mejorar la experiencia del usuario y creando aplicaciones para el usuario final.",
-                "Experiencia Laboral": [
+                "Experiencia laboral": [
                     {
                         "Empresa": "Comisión Reguladora de Energía",
                         "Giro": "Oficina Administrativa Federal",
@@ -129,7 +129,7 @@
                         "Logros": []
                     }
                 ],
-                "Competencias y Habilidades": [
+                "Competencias y habilidades": [
                     "Inglés: Intermedio",
                     "Gestión de proyectos",
                     "Fotografía",
@@ -148,7 +148,7 @@
                     "Escuela": "UNAM. Sistema de Universidad Abierta y a Distancia; Facultad de Contaduría y Administración",
                     "Ciudad": "CDMX"
                 },
-                "Formacion_Complementaria": [
+                "Formacion complementaria": [
                     {
                         "Constancia": "Certificado",
                         "Tema": "Azure Fundamentals",
@@ -180,7 +180,7 @@
                         "Fecha": "FEB 2010"
                     }
                 ],
-                "Herrameintas_Tecnicas": {
+                "Herrameintas tecnicas": {
                     "Lenguajes": [
                         "Javascript- Avanzado",
                         "PHP- Avanzado",
@@ -205,10 +205,10 @@
             }
         },
         "redesSociales":{
-            "twitter" : "ladeltwitter",
-            "Instagram" : "delinstagram",
-            "github" : "delgithub",
-            "behance": "delbehance"
+            "twitter" : "https://twitter.com/albertormenta",
+            "Instagram" : "https://www.instagram.com/albertomado/",
+            "github" : "https://github.com/a81Biz",
+            "behance": "https://albemtz.myportfolio.com/"
         }
     }
 }
