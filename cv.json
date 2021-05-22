@@ -1,0 +1,214 @@
+{
+    "cv": {
+        "personales": {
+            "NombreCompleto": "Alberto Jacinto Martínez Torres",
+            "NombreCorto": "Alberto Martínez",
+            "Ciudad": "Ciudad de México",
+            "cd": "CDMX",
+            "telefono": "+52 552 884 0485",
+            "Correo": "alberto@a81.biz"
+        },
+        "contenido": {
+            "Alberto": {
+                "Acerca de mi":"Subdirector de Desarrollo con +18 años de trayectoria profesional en distintos sectores, dirigiendo proyectos web y generando estrategias innovadoras de comercialización. Con amplia experiencia en el desarrollo de aplicaciones web y móviles, gestión de bases de datos, establecimiento de canales de comunicación y coordinación de áreas técnicas. Adapto una filosofía basada en aumentar la productividad, acelerar la innovación y priorizar las necesidades de los clientes. Habituado a trabajar bajo presión, con gran orientación al detalle y facilidad para la comunicación; cuento con una mezcla de conocimientos teóricos y prácticos que me permiten estar alineado a una visión global de la tecnología. Busco seguir desarrollando arquitecturas orientadas a servicios en web, implementando servicios para mejorar la experiencia del usuario y creando aplicaciones para el usuario final.",
+                "Experiencia Laboral": [
+                    {
+                        "Empresa": "Comisión Reguladora de Energía",
+                        "Giro": "Oficina Administrativa Federal",
+                        "Ciudad": "CDMX",
+                        "Cargo": "Subdirector de Desarrollo",
+                        "F_Inicio": "MAY 2016",
+                        "F_Fin": "act.",
+                        "Funciones": [
+                            "A cargo del desarrollo de aplicaciones web y móviles de acceso al público, así como administración de bases de datos e información.",
+                            "Gestión de cuenta entreprise Azure; atención a usuarios internos para nuevos requerimientos.",
+                            "Manejo del despliegue continuo y DevOps, al igual que desarrollo de APIS para consumo de convenios."
+                        ],
+                        "Logros": [
+                            "Migración de aplicación web a un manejador de contenido en 2016, disminuyendo el tiempo de atención de publicación de contenido y mejorando la administración",
+                            "Cambio de gráfica a formularios electrónicos para la recepción de trámites, con lo que pudimos incrementar la atención a los usuarios de forma electrónica",
+                            "Refactorización de aplicaciones a microservicios, logrando una continuidad en el servicio del 95%",
+                            "Adopción del paradigma DevOps con Azure con el que el desarrollo y puesta en marcha de requerimientos, mejoró en el tiempo de entrega de 8 a 5 meses en promedio",
+                            "Migración de sistemas y aplicativos On-premise a nube de Azure, obteniendo un ahorro en el gasto total de la DGETI en un orden del 13-15%."
+                        ]
+                    },
+                    {
+                        "Empresa": "alberTormenta MX",
+                        "Giro": "Agencia de Publicidad, MKT Digital y Activación de Puntos de Venta",
+                        "Ciudad": "CDMX",
+                        "Cargo": "Programación, Diseño y Desarrollo Web",
+                        "F_Inicio": "ENE 2015",
+                        "F_Fin": "MAY 2016",
+                        "Funciones": [
+                            "Dirección de diversos proyectos web, desde páginas simples programadas en código HTML y CSS, hasta unas con mayor grado de complejidad como: registro y activación de usuarios o desarrollo de un servicio CRM. ",
+                            "Revisión de los servicios de infraestructura necesarios para lograr el funcionamiento adecuado de los proyectos.",
+                            "Manejo del despliegue continuo y DevOps, al igual que desarrollo de APIS para consumo de convenios."
+                        ],
+                        "Logros": [
+                            "Desarrollos llevados a cabo con lenguajes de programación de código abierto como: HTML y CSS, orientado a la experiencia del cliente; Java, Javascript y jQuery como procesadores de instrucciones del lado del cliente; PHP para el proceso de instrucciones más complejas del lado del servidor; MySQL como administrador de bases de datos (en casos específicos para Microsoft, se utilizó json o .net)"
+                        ]
+                    },
+                    {
+                        "Empresa": "SitMéxico",
+                        "Giro": "Soluciones de IT",
+                        "Ciudad": "CDMX",
+                        "Cargo": "Encargado de Mercadotecnia y Publicidad",
+                        "F_Inicio": "OCT 2012",
+                        "F_Fin": "DIC 2014",
+                        "Funciones": [
+                            "Coordinación de estrategias de comercialización, basadas en grupos de trabajo en donde se delimitaban las funciones de la venta dividida en fases; el cliente obtuvo una mejor percepción del servicio suministrado.",
+                            "Responsable de la publicidad en medios físicos y electrónicos, así como gestión de eventos para creación de demanda.",
+                            "Personal a cargo: 1 coordinador de ventas, 3 ejecutivos de contacto y 2 ejecutivos de soluciones."
+                        ],
+                        "Logros": [
+                            "Implementación de una estrategia de Marketing Digital, enfocada en productos de tecnología."
+                        ]
+                    },
+                    {
+                        "Empresa": "Casas Casas MX",
+                        "Giro": "Inmobiliaria",
+                        "Ciudad": "CDMX",
+                        "Cargo": "Gerente Comercial",
+                        "F_Inicio": "MAY 2011",
+                        "F_Fin": "SEP 2012",
+                        "Funciones": [
+                            "Establecimiento de un canal de comunicación entre la inmobiliaria y el mercado objetivo, desarrollando una revista digital.",
+                            "Negociaciones con empresas para la colocación de viviendas; desarrollo de una estrategia de cambaceo para incrementar la cartera de inmuebles a la venta.",
+                            "Personal a mi cargo: 4 supervisores, 12 vendedores y 4 scouting."
+                        ],
+                        "Logros": [
+                            "Incremento sostenido en las ventas de bienes inmuebles, mediante la capacitación de personal para ventas y atención a clientes",
+                            "Mejora en el posicionamiento de la marca",
+                            "Colocación de la página de la revista, dentro de los sitios más visitados en MX (utilizando redes sociales como medio de difusión)."
+                        ]
+                    },
+                    {
+                        "Empresa": "Buscafacil.com.mx",
+                        "Giro": "Editorial Digital",
+                        "Ciudad": "CDMX",
+                        "Cargo": "Líder de Proyecto",
+                        "F_Inicio": "DIC 2010",
+                        "F_Fin": "JUL 2011",
+                        "Funciones": [
+                            "Desarrollo de protocolos para la capacitación y venta de los productos, generando una profesionalización en los procesos de revista.",
+                            "Personal a cargo: 5 vendedores."
+                        ],
+                        "Logros": [
+                            "Implementación de un protocolo de seguimiento para vendedores, el cual revisa y califica la actividad para identificar áreas de oportunidad y desarrollo de cualidades",
+                            "Apertura al mercado: de vender banners publicitarios a todo un desarrollo de contenidos enfocados en un tema en específico",
+                            "Crecimiento de una revista digital a tres, así como de contenidos mensuales a semanales, siempre disponibles para su consulta."
+                        ]
+                    },
+                    {
+                        "Empresa": "Global Security SAT",
+                        "Giro": "Proveedor Líder de Localización Satelital con GPS",
+                        "Ciudad": "CDMX",
+                        "Cargo": "Channel Sales Manager",
+                        "F_Inicio": "ABR 2010",
+                        "F_Fin": "FEB 2011",
+                        "Funciones": [
+                            "Coordinación de las áreas técnicas encargadas de realizar las operaciones, para hacer eficiente e incrementar el servicio de atención al cliente.",
+                            "Identificación del crecimiento potencial en la distribución de rastreadores satelitales."
+                        ],
+                        "Logros": [
+                            "Creación de un modelo de negocios parecido a la franquicia; ayudó a realizar una distribución efectiva de los productos",
+                            "Generación de un canal de venta mediante distribuidores del servicio con aseguradoras y empresas dedicadas a la venta e instalación de equipos de audio."
+                        ]
+                    },
+                    {
+                        "Empresa": "Banco Santander",
+                        "Giro": "Entidad Financiera",
+                        "Ciudad": "CDMX",
+                        "Cargo": "Director de Oficina",
+                        "F_Inicio": "JUL 2003",
+                        "F_Fin": "ENE 2009",
+                        "Funciones": [
+                            "Atención directa a clientes del grupo financiero; apertura de cuentas y créditos para personas físicas, físicas con actividad empresarial y morales.",
+                            "Personal a mi cargo: 3 ejecutivos, 1 subdirector de sucursal y 4 cajeros universales."
+                        ],
+                        "Logros": []
+                    }
+                ],
+                "Competencias y Habilidades": [
+                    "Inglés: Intermedio",
+                    "Gestión de proyectos",
+                    "Fotografía",
+                    "Planificación estratégica",
+                    "Trabajo en equipo",
+                    "Liderazgo",
+                    "Visión innovadora",
+                    "Toma de decisiones",
+                    "Creatividad"
+                ],
+                "Educacion": {
+                    "Grado": "Licenciatura",
+                    "Carrera": "Administración de Empresas (Trunca)",
+                    "F_Inicio": "JUN 2010",
+                    "F_Fin": "JUN 2016",
+                    "Escuela": "UNAM. Sistema de Universidad Abierta y a Distancia; Facultad de Contaduría y Administración",
+                    "Ciudad": "CDMX"
+                },
+                "Formacion_Complementaria": [
+                    {
+                        "Constancia": "Certificado",
+                        "Tema": "Azure Fundamentals",
+                        "Institucion": "Netec",
+                        "Fecha": "MAY 2020"
+                    },
+                    {
+                        "Constancia": "Certificación",
+                        "Tema": "Google Partners",
+                        "Institucion": "Google",
+                        "Fecha": "MAR 2013"
+                    },
+                    {
+                        "Constancia": "Curso",
+                        "Tema": "Desarrollo y Programación de Páginas Web con HTML, PHP y MySQL",
+                        "Institucion": "Cecati 173",
+                        "Fecha": "MAY- JUN 2011"
+                    },
+                    {
+                        "Constancia": "Seminario",
+                        "Tema": "Estrategias de Posicionamiento y Comunicación mediante el uso de Redes Sociales",
+                        "Institucion": "WTC",
+                        "Fecha": "NOV 2011"
+                    },
+                    {
+                        "Constancia": "Curso",
+                        "Tema": "Cédula como Agente de Seguros",
+                        "Institucion": "AMIS",
+                        "Fecha": "FEB 2010"
+                    }
+                ],
+                "Herrameintas_Tecnicas": {
+                    "Lenguajes": [
+                        "Javascript- Avanzado",
+                        "PHP- Avanzado",
+                        "C# - Avanzado",
+                        "NodeJs- Intermedio",
+                        "Angular- Básico"
+                    ],
+                    "Bases_Datos": [
+                        "SQL- Avanzado",
+                        "MySQL- Avanzado",
+                        "Cosmos - Intermedio",
+                        "Mongo- Intermedio"
+                    ],
+                    "Tecnologias": [
+                        "Docker- Intermedio",
+                        "Kubernetes- Intermedio",
+                        "Azure- Intermedio",
+                        "AWS- Intermedio",
+                        "gCloud- Intermedio"
+                    ]
+                }
+            }
+        },
+        "redesSociales":{
+            "twitter" : "ladeltwitter",
+            "Instagram" : "delinstagram",
+            "github" : "delgithub",
+            "behance": "delbehance"
+        }
+    }
+}
