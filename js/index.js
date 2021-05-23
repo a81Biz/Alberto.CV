@@ -18,13 +18,13 @@ document.addEventListener("DOMContentLoaded", () => {
     const page = (cv) => {
 
         let _nav = _pageSection("nav") ? _pageData.contenidoMenu(cv.contenido) : false,
-        _main = _pageSection("main") ? _pageData.contenedoresMain(cv.contenido) : false,
-        _index = _pageSection("index") ? _pageData.contenedorIndex(cv) : false,
-        _contact = _nav ? _pageData.contenedorContact(cv.personales) : false;
+            _main = _pageSection("main") ? _pageData.contenedoresMain(cv.contenido) : false,
+            _index = _pageSection("index") ? _pageData.contenedorIndex(cv) : false,
+            _contact = _nav ? _pageData.contenedorContact(cv.personales) : false;
+            _rrss = _contact ? _pageData.contenedorRedes(cv.redesSociales) : false;
 
         _main;
         _index;
-        _contact;
 
     };
 
@@ -41,11 +41,14 @@ const pageData = (secction) => {
         contenedoresMain: (content) => {
             return contenedores(content);
         },
-        contenedorIndex : (content) =>{
+        contenedorIndex: (content) => {
             return index(content);
         },
-        contenedorContact : (content)=>{
+        contenedorContact: (content) => {
             return contact(content);
+        },
+        contenedorRedes: (content) => {
+            return redes(content);
         }
     };
 
@@ -84,25 +87,25 @@ const pageData = (secction) => {
         let ul = document.getElementsByClassName("menuLineal");
         Object.entries(data).forEach(element => {
             if (element[0] == "telefono" || element[0] == "Correo") {
-    
-            let li = document.createElement("li"),
-            a = document.createElement('a'),
-            p = document.createElement("p");
 
-        p.innerHTML = element[1];
-        a.appendChild(p);
-        a.href = element[0] !== "Correo"
-            ? element[0] !== "telefono"
-                ? ""
-                : "https://wa.me/" + element[1].replace(/ /g, "")
-            : "mailto:" + element[1];
-        li.appendChild(a);
-        element[0] !== "Correo"
-            ? element[0] !== "telefono"
-                ? ""
-                : li.classList.add("cardContact")
-            : li.classList.add("cardContact");
-        ul[0].appendChild(li);
+                let li = document.createElement("li"),
+                    a = document.createElement('a'),
+                    p = document.createElement("p");
+
+                p.innerHTML = element[1];
+                a.appendChild(p);
+                a.href = element[0] !== "Correo"
+                    ? element[0] !== "telefono"
+                        ? ""
+                        : "https://wa.me/" + element[1].replace(/ /g, "")
+                    : "mailto:" + element[1];
+                li.appendChild(a);
+                element[0] !== "Correo"
+                    ? element[0] !== "telefono"
+                        ? ""
+                        : li.classList.add("cardContact")
+                    : li.classList.add("cardContact");
+                ul[0].appendChild(li);
             }
         });
 
@@ -147,65 +150,86 @@ const pageData = (secction) => {
         })
         return true;
     }
+    let redes = (data) => {
 
-    let index = (content)=>{
+        let rrss = document.getElementsByClassName("redes"),
+            ul = document.createElement("ul");
+
+        rrss[0].appendChild(ul);
+        Object.entries(data).forEach(element => {
+            let li = document.createElement("li"),
+                a = document.createElement('a'),
+                p = document.createElement("p");
+
+            p.innerHTML = element[0];
+            p.classList.add(element[0]);
+            a.appendChild(p);
+            a.href = element[1];
+            li.appendChild(a);
+            rrss[0].getElementsByTagName('ul')[0].appendChild(li);
+        });
+
+        return true;
+    }
+
+    let index = (content) => {
         console.log(content);
     }
     return _self;
 };
 
-const pageSection = (section) =>{
+const pageSection = (section) => {
 
-    const getSecciones =  (section)=> {
-        let isNav =  _=>{
-            
+    const getSecciones = (section) => {
+        let isNav = _ => {
+
             let nav = document.getElementsByTagName("nav"),
-            ul = document.createElement("ul");
+                ul = document.createElement("ul");
             ul.classList.add("menuLineal");
             nav[0].appendChild(ul);
 
             return true;
         },
-        isMain = _=>{
+            isMain = _ => {
 
-            let main = document.getElementsByTagName("main");
-            main[0].classList.add("container");
+                let main = document.getElementsByTagName("main");
+                main[0].classList.add("container");
 
-            return true;
-        },
-        isIndex = _=>{
+                return true;
+            },
+            isIndex = _ => {
 
-            let index = document.getElementsByClassName("index"),
-                redes = document.createElement("div"),
-                textoDerecha = document.createElement("div"),
-                textoIzquierda = document.createElement("div"),
-                logo = document.createElement("div");
+                let index = document.getElementsByClassName("index"),
+                    redes = document.createElement("div"),
+                    textoDerecha = document.createElement("div"),
+                    textoIzquierda = document.createElement("div"),
+                    logo = document.createElement("div");
 
-            redes.classList.add("redes");
-            textoDerecha.classList.add("textoDerecha");
-            textoIzquierda.classList.add("textoIzquierda");
-            logo.classList.add("logo");
+                redes.classList.add("redes");
+                textoDerecha.classList.add("textoDerecha");
+                textoIzquierda.classList.add("textoIzquierda");
+                logo.classList.add("logo");
 
-            index[0].appendChild(redes);
-            index[0].appendChild(textoDerecha);
-            index[0].appendChild(textoIzquierda);
-            index[0].appendChild(logo);
+                index[0].appendChild(redes);
+                index[0].appendChild(textoDerecha);
+                index[0].appendChild(textoIzquierda);
+                index[0].appendChild(logo);
 
-            return true
-        },
-        secciones = {
-            nav: isNav,
-            main: isMain,
-            index: isIndex,
-            default : _ =>{
-                return false
-            }
-        };
-        
-        return   (secciones[section] || secciones.default)();
+                return true
+            },
+            secciones = {
+                nav: isNav,
+                main: isMain,
+                index: isIndex,
+                default: _ => {
+                    return false
+                }
+            };
+
+        return (secciones[section] || secciones.default)();
     }
 
-   return  getSecciones(section);
+    return getSecciones(section);
 }
 
 
