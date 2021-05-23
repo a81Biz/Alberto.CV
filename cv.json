@@ -6,11 +6,12 @@
             "Ciudad": "Ciudad de México",
             "cd": "CDMX",
             "telefono": "+52 552 884 0485",
-            "Correo": "alberto@a81.biz"
+            "Correo": "alberto@a81.biz",
+            "Acerca de mi":"Subdirector de Desarrollo con +18 años de trayectoria profesional en distintos sectores, dirigiendo proyectos web y generando estrategias innovadoras de comercialización. Con amplia experiencia en el desarrollo de aplicaciones web y móviles, gestión de bases de datos, establecimiento de canales de comunicación y coordinación de áreas técnicas. Adapto una filosofía basada en aumentar la productividad, acelerar la innovación y priorizar las necesidades de los clientes. Habituado a trabajar bajo presión, con gran orientación al detalle y facilidad para la comunicación; cuento con una mezcla de conocimientos teóricos y prácticos que me permiten estar alineado a una visión global de la tecnología. Busco seguir desarrollando arquitecturas orientadas a servicios en web, implementando servicios para mejorar la experiencia del usuario y creando aplicaciones para el usuario final.",
         },
         "contenido": {
             "Alberto": {
-                "Acerca de mi":"Subdirector de Desarrollo con +18 años de trayectoria profesional en distintos sectores, dirigiendo proyectos web y generando estrategias innovadoras de comercialización. Con amplia experiencia en el desarrollo de aplicaciones web y móviles, gestión de bases de datos, establecimiento de canales de comunicación y coordinación de áreas técnicas. Adapto una filosofía basada en aumentar la productividad, acelerar la innovación y priorizar las necesidades de los clientes. Habituado a trabajar bajo presión, con gran orientación al detalle y facilidad para la comunicación; cuento con una mezcla de conocimientos teóricos y prácticos que me permiten estar alineado a una visión global de la tecnología. Busco seguir desarrollando arquitecturas orientadas a servicios en web, implementando servicios para mejorar la experiencia del usuario y creando aplicaciones para el usuario final.",
+                
                 "Experiencia laboral": [
                     {
                         "Empresa": "Comisión Reguladora de Energía",
@@ -140,7 +141,7 @@
                     "Toma de decisiones",
                     "Creatividad"
                 ],
-                "Educacion": {
+                "Educación": {
                     "Grado": "Licenciatura",
                     "Carrera": "Administración de Empresas (Trunca)",
                     "F_Inicio": "JUN 2010",
@@ -148,7 +149,7 @@
                     "Escuela": "UNAM. Sistema de Universidad Abierta y a Distancia; Facultad de Contaduría y Administración",
                     "Ciudad": "CDMX"
                 },
-                "Formacion complementaria": [
+                "Formación complementaria": [
                     {
                         "Constancia": "Certificado",
                         "Tema": "Azure Fundamentals",
@@ -180,7 +181,7 @@
                         "Fecha": "FEB 2010"
                     }
                 ],
-                "Herrameintas tecnicas": {
+                "Herrameintas técnicas": {
                     "Lenguajes": [
                         "Javascript- Avanzado",
                         "PHP- Avanzado",

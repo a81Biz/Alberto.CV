@@ -17,13 +17,14 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const page = (cv) => {
 
-        let _nav = _pageSection("nav") ? _pageData.contenidoMenu(cv.contenido) : console.log("error en nav"),
-        _main = _pageSection("main") ? _pageData.contenedoresMain(cv.contenido) : console.log("error en main"),
-        _index = _pageSection("index") ? _pageData.contenedorIndex(cv) : console.log("error en index");
+        let _nav = _pageSection("nav") ? _pageData.contenidoMenu(cv.contenido) : false,
+        _main = _pageSection("main") ? _pageData.contenedoresMain(cv.contenido) : false,
+        _index = _pageSection("index") ? _pageData.contenedorIndex(cv) : false,
+        _contact = _nav ? _pageData.contenedorContact(cv.personales) : false;
 
-        _nav;
         _main;
         _index;
+        _contact;
 
     };
 
@@ -35,13 +36,16 @@ const pageData = (secction) => {
 
     _self = {
         contenidoMenu: (content) => {
-            menuLineal(content);
+            return menuLineal(content);
         },
         contenedoresMain: (content) => {
-            contenedores(content);
+            return contenedores(content);
         },
         contenedorIndex : (content) =>{
-            index(content);
+            return index(content);
+        },
+        contenedorContact : (content)=>{
+            return contact(content);
         }
     };
 
@@ -72,6 +76,37 @@ const pageData = (secction) => {
                 listaMenulineal(_id, element[1]);
             }
         });
+
+        return true;
+    }
+
+    let contact = (data) => {
+        let ul = document.getElementsByClassName("menuLineal");
+        Object.entries(data).forEach(element => {
+            if (element[0] == "telefono" || element[0] == "Correo") {
+    
+            let li = document.createElement("li"),
+            a = document.createElement('a'),
+            p = document.createElement("p");
+
+        p.innerHTML = element[1];
+        a.appendChild(p);
+        a.href = element[0] !== "Correo"
+            ? element[0] !== "telefono"
+                ? ""
+                : "https://wa.me/" + element[1].replace(/ /g, "")
+            : "mailto:" + element[1];
+        li.appendChild(a);
+        element[0] !== "Correo"
+            ? element[0] !== "telefono"
+                ? ""
+                : li.classList.add("cardContact")
+            : li.classList.add("cardContact");
+        ul[0].appendChild(li);
+            }
+        });
+
+        return true;
     }
 
     let listaMenulineal = (id, object) => {
@@ -92,7 +127,7 @@ const pageData = (secction) => {
             li.id = _id;
             ul.appendChild(li);
         });
-
+        return true;
     }
     let contenedores = (object) => {
         let container = document.getElementsByClassName("container"),
@@ -110,6 +145,7 @@ const pageData = (secction) => {
             div.classList.add("content");
             div.id = "#" + Id.Get(e[0]);
         })
+        return true;
     }
 
     let index = (content)=>{
@@ -123,8 +159,8 @@ const pageSection = (section) =>{
     const getSecciones =  (section)=> {
         let isNav =  _=>{
             
-            let nav = document.getElementsByTagName("nav");
-            let ul = document.createElement("ul");
+            let nav = document.getElementsByTagName("nav"),
+            ul = document.createElement("ul");
             ul.classList.add("menuLineal");
             nav[0].appendChild(ul);
 
