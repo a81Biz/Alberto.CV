@@ -15,6 +15,10 @@ body{
         "container";    
     ;
 }
+h1{
+    font-family: 'Poppins';
+    font-weight: 300;
+}
 .wrap{
     grid-template: 
     "header     header" 3.5rem
@@ -54,6 +58,7 @@ nav{
     border-left-color: black;
     border-left-width: thin;
     padding-left: 2rem;
+    bottom: 0;
 }
 .container{
     grid-area: container;
@@ -198,4 +203,35 @@ nav{
 .logo img{
     max-height: 70%;
     float: right;
+}
+.ciudad{
+    bottom: 0;
+    position: absolute;
+}
+.spanEmpresa{
+    margin-right: 1em;
+    font-size: large;
+    font-family: 'Space Mono';
+}
+.pEmpresa{
+    font-family: 'Poppins';
+    font-size: x-large;
+    font-weight: lighter;
+}
+.pRefer:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+.spanCiudad{
+    float: left;
+  width: 20%;
+}
+.spanGiro{
+    float: left;
+    width: 40%;
+}
+.spanCargo{
+    float: left;
+    width: 40%;
 }

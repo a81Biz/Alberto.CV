@@ -20,11 +20,14 @@ document.addEventListener("DOMContentLoaded", () => {
         let _nav = _pageSection("nav") ? _pageData.contenidoMenu(cv.contenido) : false,
             _main = _pageSection("main") ? _pageData.contenedoresMain(cv.contenido) : false,
             _index = _pageSection("index") ? _pageData.contenedorIndex(cv) : false,
-            _contact = _nav ? _pageData.contenedorContact(cv.personales) : false;
-            _rrss = _contact ? _pageData.contenedorRedes(cv.redesSociales) : false;
+            _contact = _nav ? _pageData.contenedorContact(cv.personales) : false,
+            _rrss = _contact ? _pageData.contenedorRedes(cv.redesSociales) : false,
+            _experiencia = _index ? _pageData.contenedorExperiencia(cv.contenido.Alberto) : false;
 
         _main;
         _index;
+        _rrss;
+        _experiencia;
 
     };
 
@@ -49,6 +52,9 @@ const pageData = (secction) => {
         },
         contenedorRedes: (content) => {
             return redes(content);
+        },
+        contenedorExperiencia: (content)=>{
+            return laboral(content);
         }
     };
 
@@ -74,7 +80,7 @@ const pageData = (secction) => {
                 a.appendChild(p);
                 a.href = "index.html#" + _id;
                 li.appendChild(a);
-                li.id = _id;
+                li.classList.add(_id);
                 ul[0].appendChild(li);
                 listaMenulineal(_id, element[1]);
             }
@@ -84,7 +90,8 @@ const pageData = (secction) => {
     }
 
     let contact = (data) => {
-        let ul = document.getElementsByClassName("menuLineal");
+        let ul = document.getElementsByClassName("menuLineal"),
+        nav = document.getElementsByTagName("nav");
         Object.entries(data).forEach(element => {
             if (element[0] == "telefono" || element[0] == "Correo") {
 
@@ -107,6 +114,15 @@ const pageData = (secction) => {
                     : li.classList.add("cardContact");
                 ul[0].appendChild(li);
             }
+
+            if (element[0] == "Ciudad") {
+                let div = document.createElement("div"),
+                p = document.createElement("p");
+
+                div.classList.add("ciudad");
+                p.innerHTML = element[1];
+                nav[0].appendChild(div).appendChild(p);
+            }
         });
 
         return true;
@@ -114,7 +130,7 @@ const pageData = (secction) => {
 
     let listaMenulineal = (id, object) => {
         let createUl = document.createElement("ul"),
-            ul = document.getElementById(id).appendChild(createUl);
+            ul = document.getElementsByClassName(id)[0].appendChild(createUl);
 
         Object.entries(object).forEach(element => {
             let li = document.createElement("li"),
@@ -127,7 +143,7 @@ const pageData = (secction) => {
             a.appendChild(p);
             a.href = "index.html#" + _id;
             li.appendChild(a);
-            li.id = _id;
+            li.classList.add(_id);
             ul.appendChild(li);
         });
         return true;
@@ -140,13 +156,13 @@ const pageData = (secction) => {
         div.classList.add("content");
         div.classList.add("index");
         container[0].appendChild(div);
-        div.id = "#" + Id.Get(element[0]);
+        div.id = Id.Get(element[0]);
 
         Object.entries(element[1]).forEach(e => {
             div = document.createElement("div");
             container[0].appendChild(div);
             div.classList.add("content");
-            div.id = "#" + Id.Get(e[0]);
+            div.id = Id.Get(e[0]);
         })
         return true;
     }
@@ -173,8 +189,67 @@ const pageData = (secction) => {
     }
 
     let index = (content) => {
-        console.log(content);
+        let div = document.getElementsByClassName("textoDerecha"),
+        pMe = document.createElement("p"),
+        pName = document.createElement("h1");
+        div[0].appendChild(pName);
+        div[0].appendChild(pMe);
+        pName.innerHTML = content.personales.NombreCompleto;
+        pMe.innerHTML = content.personales['Acerca de mi'];
+
+        return true;
     }
+
+    let laboral = (content) =>{
+        let _id = Id.Get("Experiencia laboral"),
+        divLaboral = document.getElementById(_id);
+        
+
+        Object.entries(content["Experiencia laboral"]).forEach(element => {
+            divEmpresa = document.createElement("div");
+            let div = divLaboral.appendChild(divEmpresa);
+            div.appendChild(nombreEmpresa(element[1]));
+            div.appendChild(referEmpresa(element[1]));
+        })
+        return true;
+    }
+    let nombreEmpresa = (content) =>{
+            let pEmpresa = document.createElement("p"),
+            spanEmpresa = document.createElement("span");
+
+            pEmpresa.classList.add("pEmpresa");
+            spanEmpresa.classList.add("spanEmpresa");
+
+            spanEmpresa.textContent = content.F_Inicio + " - " + content.F_Fin;
+
+            pEmpresa.appendChild(spanEmpresa);
+            spanEmpresa.after(content.Empresa);
+
+            return pEmpresa;
+    }
+    let referEmpresa = (content) =>{
+        let pRefer = document.createElement("p"),
+            spanCiudad = document.createElement("span"),
+            spanGiro = document.createElement("span"),
+            spanCargo = document.createElement("span");
+
+            pRefer.classList.add("pRefer");
+            spanCiudad.classList.add("spanCiudad");
+            spanGiro.classList.add("spanGiro");
+            spanCargo.classList.add("spanCargo");
+
+            spanCiudad.textContent = content.Ciudad;
+            spanGiro.textContent = content.Giro;
+            spanCargo.textContent = content.Cargo;
+
+            pRefer.appendChild(spanCiudad);
+            pRefer.appendChild(spanGiro);
+            pRefer.appendChild(spanCargo);
+
+            return pRefer;
+
+    }
+
     return _self;
 };
 
