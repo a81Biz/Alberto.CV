@@ -1,4 +1,4 @@
-const config = () => {
+function config(){
     let _self = {};
     
     _self = {
@@ -9,9 +9,11 @@ const config = () => {
 
     let urls = () =>{
         return {
-            "data" : "https://raw.githubusercontent.com/a81Biz/Alberto.CV/master/cv.json"
+            "cvJson" : "https://raw.githubusercontent.com/a81Biz/Alberto.CV/master/cv.json"
         }
     }
 
     return _self;
-}
+};
+
+export default config(); 
