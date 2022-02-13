@@ -7,7 +7,7 @@
             "cd": "CDMX",
             "telefono": "+52 552 884 0485",
             "Correo": "alberto@a81.biz",
-            "Acerca de mi":"Subdirector de Desarrollo con +18 años de trayectoria profesional en distintos sectores, dirigiendo proyectos web y generando estrategias innovadoras de comercialización. Con amplia experiencia en el desarrollo de aplicaciones web y móviles, gestión de bases de datos, establecimiento de canales de comunicación y coordinación de áreas técnicas. Adapto una filosofía basada en aumentar la productividad, acelerar la innovación y priorizar las necesidades de los clientes. Habituado a trabajar bajo presión, con gran orientación al detalle y facilidad para la comunicación; cuento con una mezcla de conocimientos teóricos y prácticos que me permiten estar alineado a una visión global de la tecnología. Busco seguir desarrollando arquitecturas orientadas a servicios en web, implementando servicios para mejorar la experiencia del usuario y creando aplicaciones para el usuario final."
+            "Acerca de mi":"Director de Desarrollo, más 18 años de trayectoria profesional en distintos sectores, dirigiendo proyectos web y generando estrategias innovadoras de comercialización. Con amplia experiencia en el desarrollo de aplicaciones web y móviles, gestión de bases de datos, establecimiento de canales de comunicación y coordinación de áreas técnicas. Adapto una filosofía basada en aumentar la productividad, acelerar la innovación y priorizar las necesidades de los clientes. Habituado a trabajar bajo presión, con gran orientación al detalle y facilidad para la comunicación; cuento con una mezcla de conocimientos teóricos y prácticos que me permiten estar alineado a una visión global de la tecnología. Busco seguir desarrollando arquitecturas orientadas a servicios en web, implementando servicios para mejorar la experiencia del usuario y creando aplicaciones para el usuario final."
         },
         "contenido": {
             "Alberto": {
@@ -17,9 +17,30 @@
                         "Empresa": "Comisión Reguladora de Energía",
                         "Giro": "Oficina Administrativa Federal",
                         "Ciudad": "CDMX",
+                        "Cargo": "Director de Desarrollo",
+                        "F_Inicio": "SEP 2021",
+                        "F_Fin": "actual",
+                        "Funciones": [
+                            "Líder del equipo de de trabajo de Desarrollo.",
+                            "Líder técnico para el diseño, desarrollo y mantenimiento de servicios web y sistemas.",
+                            "Definir y dirigir el diseño y arquitectura de nuevos sistemas.",
+                            "Desarrollador y coordinador en los requerimientos de nuevos sistemas y correción de errores."
+                        ],
+                        "Logros": [
+                            "Migración de aplicación web a un manejador de contenido en 2016, disminuyendo el tiempo de atención de publicación de contenido y mejorando la administración",
+                            "Cambio de gráfica a formularios electrónicos para la recepción de trámites, con lo que pudimos incrementar la atención a los usuarios de forma electrónica",
+                            "Refactorización de aplicaciones a microservicios, logrando una continuidad en el servicio del 95%",
+                            "Adopción del paradigma DevOps con Azure con el que el desarrollo y puesta en marcha de requerimientos, mejoró en el tiempo de entrega de 8 a 5 meses en promedio",
+                            "Migración de sistemas y aplicativos On-premise a nube de Azure, obteniendo un ahorro en el gasto total de la DGETI en un orden del 13-15%."
+                        ]
+                    },
+                    {
+                        "Empresa": "Comisión Reguladora de Energía",
+                        "Giro": "Oficina Administrativa Federal",
+                        "Ciudad": "CDMX",
                         "Cargo": "Subdirector de Desarrollo",
                         "F_Inicio": "MAY 2016",
-                        "F_Fin": "act.",
+                        "F_Fin": "SEP 2021",
                         "Funciones": [
                             "A cargo del desarrollo de aplicaciones web y móviles de acceso al público, así como administración de bases de datos e información.",
                             "Gestión de cuenta entreprise Azure; atención a usuarios internos para nuevos requerimientos.",
@@ -181,7 +202,7 @@
                         "Fecha": "FEB 2010"
                     }
                 ],
-                "Herrameintas técnicas": {
+                "Herramientas técnicas": {
                     "Lenguajes": [
                         "Javascript- Avanzado",
                         "PHP- Avanzado",
